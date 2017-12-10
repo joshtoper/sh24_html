@@ -1,1 +1,46 @@
-@import 'reset.css'
+@import 'reset.css';
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.order-progress {
+  width: 1024px;
+  background-color: #ffc200;
+  margin: 1em;
+  display: flex;
+  padding: 1em;
+}
+
+.order-progress__step {
+  border-bottom: 3px solid #ffffff;
+  margin: 1em 0;
+  padding: 0 1em 1em 1em;
+}
+
+.order-progress__step.completed {
+  border-color: #000000;
+}
+
+.order-progress__step:first-child {
+  padding-left: 0;
+}
+
+.order-progress__step:last-child {
+  padding-right: 0;
+}
+
+.order-progress__step:first-child .order-progress__step-name{
+  margin-left: 0;
+}
+
+.order-progress__step:last-child .order-progress__step-name{
+  margin-right: 0;
+}
+
+.order-progress__step-name {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 1em;
+  font-weight: bold;
+}
